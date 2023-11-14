@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Padang Revan</title>
 
   <link rel="stylesheet" href="style.css">
 
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+  <!-- Navigation -->
   <header>
     <nav>
       <ul>
@@ -22,11 +22,11 @@
           <a href="#content2">Home</a>
         </li>
         <li>
-          <a href="#About">About Us</a>
+          <a onclick="about()"">About me</a>
         </li>
       </ul>
     </nav>
-  </header>
+  
 
   <div id="content">
     <div class="artic">
@@ -39,7 +39,8 @@
         <img src="delivery-bike.png" alt="" class="kfc">
       </article>
     </div>
-
+  </header>
+  
     <main id="content2">
       <div class="flex-main top">
         <article class="">
@@ -77,7 +78,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
 
-          <p>Selamat datang di Restoran Padang Ku, destinasi kuliner autentik yang menghadirkan kelezatan khas Padang di
+          <p>Selamat datang di Restoran Padang Revan, destinasi kuliner autentik yang menghadirkan kelezatan khas Padang di
             setiap hidangan. Dengan menu yang beragam dan cita rasa yang otentik, kami berkomitmen untuk memberikan
             pengalaman makan yang tak terlupakan bagi setiap pelanggan kami. Setiap hidangan disajikan dengan cinta dan
             keahlian khas, mencerminkan warisan kuliner yang kaya dan beraneka ragam dari Ranah Minang.
@@ -91,7 +92,7 @@
             Kami bangga menjadi bagian dari komunitas kuliner dan berusaha untuk memberikan layanan terbaik kepada
             pelanggan kami. Dengan bahan baku berkualitas tinggi dan resep tradisional yang terjaga keasliannya,
             Restoran Padang Ku adalah tempat ideal bagi pecinta masakan Padang yang menghargai keaslian cita rasa. Mari
-            bersama-sama menjelajahi kelezatan dunia kuliner Padang di Restoran Padang Ku. Selamat menikmati sajian
+            bersama-sama menjelajahi kelezatan dunia kuliner Padang di Restoran Padang Revan. Selamat menikmati sajian
             istimewa kami yang menggoda selera!
           </p>
         </article>
@@ -99,13 +100,15 @@
 
       <aside class="card">
         <div class="flex-main down">
+          <div class="containdel">
           <article class="profile" class="profile-card">
             <h2>Padang Sederhana</h2>
             <p class="p1">Rendang enak nan menyedapkan</p>
             <figure>
               <img class="delivery" src="pngtree cook.png" />
-              <figcaption>Restaurang of delicious</figcaption>
+              <figcaption>Warung makan bintang 5</figcaption>
             </figure>
+            </div>
 
 
             <section>
@@ -115,6 +118,9 @@
                 Ayo kunjungi restoran kami, jika anda melihat website ini
                 maka selamat anda akan mendapatkan bonus <strong>10%</strong> dengan
                 cara memberikan screen shot website ini kekasir yang sedang bertugas.
+              </p>
+              <p style="font-size: 13px; color: slategray;">
+                syarat dan ketentuan berlaku
               </p>
 
               <div class="row">
@@ -172,6 +178,13 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+
+      // alert //
+
+      function about(Revan) {
+        alert("Namaku adalah Revan Muhmmad Zaki \n Jepara Jawa tengah \n SMAN 1 MLONGGO \n 16 tahun")
+      }
+
     </script>
 
 </body>
